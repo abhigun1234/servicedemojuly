@@ -16,4 +16,10 @@ export class ProductdetailsComponent implements OnInit {
    this.productDetails= this.product.getProductDetails()
 
   }
+  sendData(product)
+  {
+
+  console.log(product)
+  this.product.setProdctData(product)
+  }
 }

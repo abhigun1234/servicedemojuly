@@ -10,14 +10,18 @@ export class ProductlistComponent implements OnInit {
 //   {id:'2',name:'banana',price:'124'}
 // ,{id:'3',name:'apple',price:'500'}] 
 productDetails
+productname
  
   constructor(private product:ProductService) { }
 
   ngOnInit() {
+    
   }
   getProduct()
   {
-    this.productDetails=this.product.getProductDetails()
+    //this.productDetails=this.product.getProductDetails()
+    this.productname=this.product.getProductName()
+    alert( this.productname)
 
   }
 

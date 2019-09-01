@@ -1,4 +1,7 @@
 <button (click)="getProduct()" >productdetails</button>
+<label>Enter New Product</label>
+<input type="text"  #product>
+<button (click)="sendData()">share</button>
 <ul>
     
         <li *ngFor="let product of productDetails">
